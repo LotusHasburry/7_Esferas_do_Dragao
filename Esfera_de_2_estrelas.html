@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pergunte ao sofredor</title>
+</head>
+	<body>
+		<script>
+			var nome = prompt("Qual o seu nome?");
+			var idade = prompt("Quantos anos você tem?");
+			var linguagem = prompt("Qual linguagem de programação você está estudando?");
+
+			alert("Olá " + nome + ", você tem " +  idade + " anos," + " e já está aprendendo " + linguagem + "!");
+
+			var gosto = prompt("Você gosta de estudar " + linguagem + "?");
+
+			if(linguagem.toLowerCase() === "phyton") {
+				switch(gosto.toLowerCase()) {
+				case "sim":
+				case "gosto":
+				case "adoro":
+					alert("Talvez você seja fofoqueiro(a) e nem sabe, gostando da língua das cobras...");
+					break;
+				case "nao":
+				case "não":
+					alert("Voldemort teria vergonha de você");
+					break;
+				}		
+			} else if (linguagem.toLowerCase() === "javascript") {
+				switch(gosto.toLowerCase()) {
+				case "sim":
+				case "gosto":
+				case "adoro":
+					alert("Você já pode ser roteirista de cinema, já que gosta de um SCRIPT");
+					break;
+				case "nao":
+				case "não":
+					alert("Nem todo mundo nasceu para ser um bom ator e decorar SCRIPTS");
+					break;
+				} 	
+			} else if (linguagem.toLowerCase() === "java") {
+				switch(gosto.toLowerCase()) {
+				case "sim":
+				case "gosto":
+				case "adoro":
+					alert("Outras pessoas diriam que você é louco de gostar dessa língua supostamente difícil, já eu, diria que elas estão completamente certas");
+					break;
+				case "nao":
+				case "não":
+					alert("Vá para outra linguagem de programação pois então\nolhe para trás, e diga, Javaitarde");
+					break;
+				}
+			} else if (linguagem.toLowerCase() === "html") {
+				switch(gosto.toLowerCase()) {
+				case "sim":
+				case "gosto":
+				case "adoro":
+					alert("'ainn que html não é linguagem de programação e sei lá mais o que'\nO mundo está tão torto que é o nerd de programação fazendo bullying \nDeixe o rapaz ser feliz na linguagem de marcação dele");
+					break;
+				case "nao":
+				case "não":
+					alert("rlx po, aguenta mais um pouco e você chega nas linguagens mais legais pra mexer");
+					break;
+				}
+			} else {
+				alert("possivelmente eu não conheço sua linguagem para fazer piada, ou eu não tinha ideias de piadas pra ela, sinto muito")
+			}
+		</script>
+	</body>
+</html>
